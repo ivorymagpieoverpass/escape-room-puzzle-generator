@@ -1,0 +1,1 @@
+"""Handlers — I/O boundaries for rooms, exports, and imports."""
