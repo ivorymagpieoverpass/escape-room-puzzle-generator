@@ -1,0 +1,1 @@
+"""Services — LLM backends, embeddings, and hint ranking."""
