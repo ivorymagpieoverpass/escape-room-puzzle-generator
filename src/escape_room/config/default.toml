@@ -1,0 +1,29 @@
+# Default config for escape-room-puzzle-generator.
+# Copy to config/local.toml and edit — do NOT commit secrets here.
+
+[llm]
+backend = "local"          # local | mock | openai_compat
+model_path = "models/gguf/qwen2.5-7b-instruct-q4_k_m.gguf"
+n_ctx = 8192
+temperature = 0.85
+top_p = 0.92
+max_tokens = 1024
+
+[generation]
+default_theme = "abandoned-lab"
+default_difficulty = 3
+puzzle_count_min = 4
+puzzle_count_max = 9
+hint_budget = 3
+red_herring_ratio = 0.2
+
+[paths]
+output_dir = "rooms/generated"
+vault_dir = "puzzles/vault"
+assets_root = "assets/rooms"
+log_dir = "logs"
+
+[safety]
+allow_custom_logic = false
+max_room_bytes = 2_097_152
+prompt_sandbox = true
