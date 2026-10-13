@@ -1,0 +1,1 @@
+"""Core generation logic — the beating heart of the toolkit."""
